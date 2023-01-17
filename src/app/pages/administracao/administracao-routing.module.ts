@@ -5,21 +5,9 @@ import { AdministracaoPage } from './administracao.page';
 
 const routes: Routes = [
   {
-    path: 'administracao',
+    path: '',
     component: AdministracaoPage    
-  },
-  {
-    path: 'inicio',
-    loadChildren: () => import('../inicio/inicio.module').then( m => m.InicioPageModule)
-  },
-  {
-    path: 'manutencao',
-    loadChildren: () => import('../manutencao/manutencao.module').then( m => m.ManutencaoPageModule)
-  },
-  {
-    path: 'funcionarios',
-    loadChildren: () => import('../funcionarios/funcionarios.module').then( m => m.FuncionariosPageModule)
-  },
+  }
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>funcionarios</ion-title>
+    <ion-title>Funcionários</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,18 +13,18 @@
     <ion-tabs>
       <ion-tab-bar slot="bottom">
 
-        <ion-tab-button tab="inicio">
-          <ion-icon name="triangle"></ion-icon>
+        <ion-tab-button [routerLink]="['/inicio']">
+          <ion-icon name="logo-windows" aria-hidden="true"></ion-icon>
           <ion-label>Inicio</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="administracao">
-          <ion-icon name="triangle"></ion-icon>
+        <ion-tab-button [routerLink]="['/administracao']">
+          <ion-icon name="calendar" aria-hidden="true"></ion-icon>
           <ion-label>Administração</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="manutencao">
-          <ion-icon name="ellipse"></ion-icon>
+        <ion-tab-button [routerLink]="['/manutencao']">
+          <ion-icon name="construct"></ion-icon>
           <ion-label>Manutenção</ion-label>
         </ion-tab-button>
 
