@@ -1,0 +1,7 @@
+{
+  "name": "Aplicativo Senac",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
