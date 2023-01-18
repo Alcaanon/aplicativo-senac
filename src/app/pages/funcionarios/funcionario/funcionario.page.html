@@ -1,9 +1,49 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>funcionario</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Cadastro de Funcionários</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list-header>
+        <ion-label>Funcionários</ion-label>
+      </ion-list-header>
+      <ion-item [routerLink]="['/funcionario']">
+        <ion-icon slot="start"  name="add-circle"></ion-icon>
+        <ion-label>Cadastrar</ion-label>
+      </ion-item>
+      <ion-list-header>
+        <ion-label></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Insira aqui os Funcionários</ion-label>
+      </ion-item>
+    </ion-content>
+  </div>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="['/funcionarios']">
+          <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+          <ion-label>Voltar</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/inicio']">
+          <ion-icon name="logo-windows" aria-hidden="true"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/administracao']">
+          <ion-icon name="calendar" aria-hidden="true"></ion-icon>
+          <ion-label>Administração</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/manutencao']">
+          <ion-icon name="construct"></ion-icon>
+          <ion-label>Manutenção</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
